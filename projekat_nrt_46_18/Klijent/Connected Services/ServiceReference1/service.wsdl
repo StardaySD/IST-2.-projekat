@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WcfService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IUser_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/WcfService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAdmin_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_prikazGrupa_InputMessage">
+    <wsdl:part name="parameters" element="tns:prikazGrupa" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_prikazGrupa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:prikazGrupaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_zahtevZaPristupGrupi_InputMessage">
+    <wsdl:part name="parameters" element="tns:zahtevZaPristupGrupi" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_zahtevZaPristupGrupi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:zahtevZaPristupGrupiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_izlazakIzGrupe_InputMessage">
+    <wsdl:part name="parameters" element="tns:izlazakIzGrupe" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_izlazakIzGrupe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:izlazakIzGrupeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_slanjePoruka_InputMessage">
+    <wsdl:part name="parameters" element="tns:slanjePoruka" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_slanjePoruka_OutputMessage">
+    <wsdl:part name="parameters" element="tns:slanjePorukaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_citanjePoruka_InputMessage">
+    <wsdl:part name="parameters" element="tns:citanjePoruka" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_citanjePoruka_OutputMessage">
+    <wsdl:part name="parameters" element="tns:citanjePorukaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_onlineKorisnici_InputMessage">
+    <wsdl:part name="parameters" element="tns:onlineKorisnici" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_onlineKorisnici_OutputMessage">
+    <wsdl:part name="parameters" element="tns:onlineKorisniciResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_vecUgrupi_InputMessage">
+    <wsdl:part name="parameters" element="tns:vecUgrupi" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_vecUgrupi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:vecUgrupiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_IzmeniKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:IzmeniKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_IzmeniKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IzmeniKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_DodajKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:DodajKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_DodajKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DodajKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_OdobriUlazakUGrupu_InputMessage">
+    <wsdl:part name="parameters" element="tns:OdobriUlazakUGrupu" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_OdobriUlazakUGrupu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OdobriUlazakUGrupuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_PonistiUlazakUGrupu_InputMessage">
+    <wsdl:part name="parameters" element="tns:PonistiUlazakUGrupu" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_PonistiUlazakUGrupu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PonistiUlazakUGrupuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_prikazZahteva_InputMessage">
+    <wsdl:part name="parameters" element="tns:prikazZahteva" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_prikazZahteva_OutputMessage">
+    <wsdl:part name="parameters" element="tns:prikazZahtevaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_prikaziSveKorisnike_InputMessage">
+    <wsdl:part name="parameters" element="tns:prikaziSveKorisnike" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_prikaziSveKorisnike_OutputMessage">
+    <wsdl:part name="parameters" element="tns:prikaziSveKorisnikeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAdmin">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/Login" message="tns:IAdmin_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/LoginResponse" message="tns:IAdmin_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="prikazGrupa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/prikazGrupa" message="tns:IAdmin_prikazGrupa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/prikazGrupaResponse" message="tns:IAdmin_prikazGrupa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="zahtevZaPristupGrupi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/zahtevZaPristupGrupi" message="tns:IAdmin_zahtevZaPristupGrupi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/zahtevZaPristupGrupiResponse" message="tns:IAdmin_zahtevZaPristupGrupi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="izlazakIzGrupe">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/izlazakIzGrupe" message="tns:IAdmin_izlazakIzGrupe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/izlazakIzGrupeResponse" message="tns:IAdmin_izlazakIzGrupe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="slanjePoruka">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/slanjePoruka" message="tns:IAdmin_slanjePoruka_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/slanjePorukaResponse" message="tns:IAdmin_slanjePoruka_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="citanjePoruka">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/citanjePoruka" message="tns:IAdmin_citanjePoruka_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/citanjePorukaResponse" message="tns:IAdmin_citanjePoruka_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="onlineKorisnici">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/onlineKorisnici" message="tns:IAdmin_onlineKorisnici_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/onlineKorisniciResponse" message="tns:IAdmin_onlineKorisnici_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vecUgrupi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/vecUgrupi" message="tns:IAdmin_vecUgrupi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/vecUgrupiResponse" message="tns:IAdmin_vecUgrupi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IzmeniKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmin/IzmeniKorisnika" message="tns:IAdmin_IzmeniKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmin/IzmeniKorisnikaResponse" message="tns:IAdmin_IzmeniKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DodajKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmin/DodajKorisnika" message="tns:IAdmin_DodajKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmin/DodajKorisnikaResponse" message="tns:IAdmin_DodajKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OdobriUlazakUGrupu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmin/OdobriUlazakUGrupu" message="tns:IAdmin_OdobriUlazakUGrupu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmin/OdobriUlazakUGrupuResponse" message="tns:IAdmin_OdobriUlazakUGrupu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PonistiUlazakUGrupu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmin/PonistiUlazakUGrupu" message="tns:IAdmin_PonistiUlazakUGrupu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmin/PonistiUlazakUGrupuResponse" message="tns:IAdmin_PonistiUlazakUGrupu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="prikazZahteva">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmin/prikazZahteva" message="tns:IAdmin_prikazZahteva_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmin/prikazZahtevaResponse" message="tns:IAdmin_prikazZahteva_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="prikaziSveKorisnike">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmin/prikaziSveKorisnike" message="tns:IAdmin_prikaziSveKorisnike_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmin/prikaziSveKorisnikeResponse" message="tns:IAdmin_prikaziSveKorisnike_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IUser">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/Login" message="tns:IAdmin_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/LoginResponse" message="tns:IAdmin_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="prikazGrupa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/prikazGrupa" message="tns:IAdmin_prikazGrupa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/prikazGrupaResponse" message="tns:IAdmin_prikazGrupa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="zahtevZaPristupGrupi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/zahtevZaPristupGrupi" message="tns:IAdmin_zahtevZaPristupGrupi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/zahtevZaPristupGrupiResponse" message="tns:IAdmin_zahtevZaPristupGrupi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="izlazakIzGrupe">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/izlazakIzGrupe" message="tns:IAdmin_izlazakIzGrupe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/izlazakIzGrupeResponse" message="tns:IAdmin_izlazakIzGrupe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="slanjePoruka">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/slanjePoruka" message="tns:IAdmin_slanjePoruka_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/slanjePorukaResponse" message="tns:IAdmin_slanjePoruka_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="citanjePoruka">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/citanjePoruka" message="tns:IAdmin_citanjePoruka_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/citanjePorukaResponse" message="tns:IAdmin_citanjePoruka_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="onlineKorisnici">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/onlineKorisnici" message="tns:IAdmin_onlineKorisnici_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/onlineKorisniciResponse" message="tns:IAdmin_onlineKorisnici_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vecUgrupi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/vecUgrupi" message="tns:IAdmin_vecUgrupi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/vecUgrupiResponse" message="tns:IAdmin_vecUgrupi_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAdmin" type="tns:IAdmin">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IUser/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="prikazGrupa">
+      <soap:operation soapAction="http://tempuri.org/IUser/prikazGrupa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zahtevZaPristupGrupi">
+      <soap:operation soapAction="http://tempuri.org/IUser/zahtevZaPristupGrupi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="izlazakIzGrupe">
+      <soap:operation soapAction="http://tempuri.org/IUser/izlazakIzGrupe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="slanjePoruka">
+      <soap:operation soapAction="http://tempuri.org/IUser/slanjePoruka" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="citanjePoruka">
+      <soap:operation soapAction="http://tempuri.org/IUser/citanjePoruka" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="onlineKorisnici">
+      <soap:operation soapAction="http://tempuri.org/IUser/onlineKorisnici" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="vecUgrupi">
+      <soap:operation soapAction="http://tempuri.org/IUser/vecUgrupi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IzmeniKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IAdmin/IzmeniKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DodajKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IAdmin/DodajKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OdobriUlazakUGrupu">
+      <soap:operation soapAction="http://tempuri.org/IAdmin/OdobriUlazakUGrupu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PonistiUlazakUGrupu">
+      <soap:operation soapAction="http://tempuri.org/IAdmin/PonistiUlazakUGrupu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="prikazZahteva">
+      <soap:operation soapAction="http://tempuri.org/IAdmin/prikazZahteva" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="prikaziSveKorisnike">
+      <soap:operation soapAction="http://tempuri.org/IAdmin/prikaziSveKorisnike" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_IUser" type="tns:IUser">
+    <wsp:PolicyReference URI="#NetTcpBinding_IUser_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/IUser/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="prikazGrupa">
+      <soap12:operation soapAction="http://tempuri.org/IUser/prikazGrupa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="zahtevZaPristupGrupi">
+      <soap12:operation soapAction="http://tempuri.org/IUser/zahtevZaPristupGrupi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="izlazakIzGrupe">
+      <soap12:operation soapAction="http://tempuri.org/IUser/izlazakIzGrupe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="slanjePoruka">
+      <soap12:operation soapAction="http://tempuri.org/IUser/slanjePoruka" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="citanjePoruka">
+      <soap12:operation soapAction="http://tempuri.org/IUser/citanjePoruka" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="onlineKorisnici">
+      <soap12:operation soapAction="http://tempuri.org/IUser/onlineKorisnici" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="vecUgrupi">
+      <soap12:operation soapAction="http://tempuri.org/IUser/vecUgrupi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WcfService">
+    <wsdl:port name="BasicHttpBinding_IAdmin" binding="tns:BasicHttpBinding_IAdmin">
+      <soap:address location="http://localhost:8787/Design_Time_Addresses/WcfService/Admin" />
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_IUser" binding="tns:NetTcpBinding_IUser">
+      <soap12:address location="net.tcp://localhost:8788/Design_Time_Addresses/WcfService/User" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8788/Design_Time_Addresses/WcfService/User</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Korisnik">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id_korisnika" type="xs:int" />
+      <xs:element minOccurs="0" name="korisnicko_ime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lozinka" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nadimak" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tip" type="tns:Tip" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Korisnik" nillable="true" type="tns:Korisnik" />
+  <xs:simpleType name="Tip">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Admin" />
+      <xs:enumeration value="User" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Tip" nillable="true" type="tns:Tip" />
+  <xs:complexType name="ArrayOfGrupa">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Grupa" nillable="true" type="tns:Grupa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGrupa" nillable="true" type="tns:ArrayOfGrupa" />
+  <xs:complexType name="Grupa">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id_grupa" type="xs:int" />
+      <xs:element minOccurs="0" name="max_broj_clanova" type="xs:int" />
+      <xs:element minOccurs="0" name="naziv" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Grupa" nillable="true" type="tns:Grupa" />
+  <xs:complexType name="GrupaKorisnici">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id_grupa" type="xs:int" />
+      <xs:element minOccurs="0" name="id_korisnik" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GrupaKorisnici" nillable="true" type="tns:GrupaKorisnici" />
+  <xs:complexType name="Poruke">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id_poruke" type="xs:int" />
+      <xs:element minOccurs="0" name="id_posiljalac" type="xs:int" />
+      <xs:element minOccurs="0" name="id_primalac" type="xs:int" />
+      <xs:element minOccurs="0" name="tekst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vreme" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Poruke" nillable="true" type="tns:Poruke" />
+  <xs:complexType name="ArrayOfKorisnik">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Korisnik" nillable="true" type="tns:Korisnik" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKorisnik" nillable="true" type="tns:ArrayOfKorisnik" />
+  <xs:complexType name="ArrayOfGrupaKorisnici">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GrupaKorisnici" nillable="true" type="tns:GrupaKorisnici" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGrupaKorisnici" nillable="true" type="tns:ArrayOfGrupaKorisnici" />
+</xs:schema>

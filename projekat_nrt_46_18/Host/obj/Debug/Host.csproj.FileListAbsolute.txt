@@ -1,0 +1,33 @@
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Host\bin\Debug\Host.exe.config
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Host\bin\Debug\Host.exe
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Host\bin\Debug\Host.pdb
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Host\bin\Debug\WcfService.dll
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Host\bin\Debug\WcfService.pdb
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Host\bin\Debug\WcfService.dll.config
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Host\obj\Debug\Host.csprojAssemblyReference.cache
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Host\obj\Debug\Host.csproj.CoreCompileInputs.cache
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Host\obj\Debug\Host.csproj.CopyComplete
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Host\obj\Debug\Host.exe
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Host\obj\Debug\Host.pdb
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Host\bin\Debug\Host.exe.config
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Host\bin\Debug\Host.exe
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Host\bin\Debug\Host.pdb
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Host\bin\Debug\WcfService.dll
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Host\bin\Debug\WcfService.pdb
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Host\bin\Debug\WcfService.dll.config
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Host\obj\Debug\Host.csproj.AssemblyReference.cache
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Host\obj\Debug\Host.csproj.CoreCompileInputs.cache
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Host\obj\Debug\Host.csproj.CopyComplete
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Host\obj\Debug\Host.exe
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Host\obj\Debug\Host.pdb
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Host\bin\Debug\Host.exe.config
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Host\bin\Debug\Host.exe
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Host\bin\Debug\Host.pdb
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Host\bin\Debug\WcfService.dll
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Host\bin\Debug\WcfService.pdb
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Host\bin\Debug\WcfService.dll.config
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Host\obj\Debug\Host.csproj.AssemblyReference.cache
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Host\obj\Debug\Host.csproj.CoreCompileInputs.cache
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Host\obj\Debug\Host.csproj.CopyComplete
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Host\obj\Debug\Host.exe
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Host\obj\Debug\Host.pdb

@@ -1,0 +1,45 @@
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Administrator\bin\Debug\Administrator.exe.config
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Administrator\bin\Debug\Administrator.exe
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Administrator\bin\Debug\Administrator.pdb
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Administrator\bin\Debug\WcfService.dll
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Administrator\bin\Debug\WcfService.pdb
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Administrator\bin\Debug\WcfService.dll.config
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.csprojAssemblyReference.cache
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.Form1.resources
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.FormAdmin.resources
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.Properties.Resources.resources
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.csproj.GenerateResource.cache
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.csproj.CoreCompileInputs.cache
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.csproj.CopyComplete
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.exe
+C:\Users\Biljana\Desktop\Viser\III godina\IST\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.pdb
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Administrator\bin\Debug\Administrator.exe.config
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Administrator\bin\Debug\Administrator.exe
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Administrator\bin\Debug\Administrator.pdb
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Administrator\bin\Debug\WcfService.dll
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Administrator\bin\Debug\WcfService.pdb
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Administrator\bin\Debug\WcfService.dll.config
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.csproj.AssemblyReference.cache
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.Form1.resources
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.FormAdmin.resources
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.Properties.Resources.resources
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.csproj.GenerateResource.cache
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.csproj.CoreCompileInputs.cache
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.csproj.CopyComplete
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.exe
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_52_18\Administrator\obj\Debug\Administrator.pdb
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Administrator\bin\Debug\Administrator.exe.config
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Administrator\bin\Debug\Administrator.exe
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Administrator\bin\Debug\Administrator.pdb
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Administrator\bin\Debug\WcfService.dll
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Administrator\bin\Debug\WcfService.pdb
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Administrator\bin\Debug\WcfService.dll.config
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Administrator\obj\Debug\Administrator.csproj.AssemblyReference.cache
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Administrator\obj\Debug\Administrator.Form1.resources
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Administrator\obj\Debug\Administrator.FormAdmin.resources
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Administrator\obj\Debug\Administrator.Properties.Resources.resources
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Administrator\obj\Debug\Administrator.csproj.GenerateResource.cache
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Administrator\obj\Debug\Administrator.csproj.CoreCompileInputs.cache
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Administrator\obj\Debug\Administrator.csproj.CopyComplete
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Administrator\obj\Debug\Administrator.exe
+C:\Users\zvezdan\Desktop\2.projekat\projekat_nrt_46_18\Administrator\obj\Debug\Administrator.pdb
